@@ -1,0 +1,45 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+/* link colors */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* nav design */
+nav {
+    background-color: rebeccapurple;
+}
+
+nav ul li img {
+    width: 5%;
+}
+
+/* menu bar styling */
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+/* menu items styling */
+nav ul li {
+    font-size: 1.25em;
+    margin: .8% 0 .8% 10%;
+    padding-left: 2%;
+    border-left: solid white 2px;
+}
+
+/* logo */
+nav ul li:first-of-type {
+    border: none;
+    margin-right: 38%;
+}
