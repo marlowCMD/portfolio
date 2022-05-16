@@ -7,6 +7,7 @@
 /* universal styling */
 body {
     font-family: 'Quicksand', 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 /* link colors */
@@ -64,7 +65,7 @@ main section {
 }
 
 /* projects carousel */
-main ul {
+.carousel {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -75,14 +76,8 @@ main ul {
     overflow-x: scroll;
     scrollbar-color: turquoise white;
     scrollbar-width: thin;
+    background-color: rebeccapurple;
 }
-
-/* project thumbnail */
-main ul li {
-    margin-left: 0;
-    margin-right: 2%;
-}
-
 /* carousel images */
 .gradient {
     background-image:
@@ -105,4 +100,79 @@ main ul li {
 /* project titles placing */
 figcaption {
     text-align: center;
+}
+
+/* styling the project discription */
+.project_main section:first-of-type {
+    width: 65%;
+}
+
+/* project images styling */
+.project_images {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin-top: -25%;
+    padding-left: 1%;
+}
+
+/* project images caption styling */
+.project_images figcaption {
+text-align: start;
+}
+
+figcaption a {
+    text-decoration: none;
+}
+
+/* project image size */
+.project_images img {
+width: 500px;
+}
+
+/* project thumbnail */
+.carousel li {
+margin-left: 0;
+margin-right: 2%;
+}
+
+/* styling the project description and navigation on the right */
+.project_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.other_projects {
+    margin-right: 2%;
+    width: 400px;
+}
+
+/* styling the other projects section */
+.other_projects ul {
+    list-style-type: none;
+}
+
+.other_projects li {
+    margin-bottom: 20%;
+}
+
+.other_projects a {
+    color: black;
+    text-decoration: none;
+}
+
+/* styling images of other project section */
+.other_projects img {
+    width: 40%;
+    float: right;
+}
+
+/* copyright placement */
+footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1%;
 }
