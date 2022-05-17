@@ -122,7 +122,12 @@ figcaption {
 text-align: start;
 }
 
+/* links in figcaption */
 figcaption a {
+    padding: .5% 2%;
+    border-radius: 5%;
+    background-color: turquoise;
+    color: black;
     text-decoration: none;
 }
 
@@ -144,6 +149,7 @@ margin-right: 2%;
     justify-content: space-between;
 }
 
+/* text in other projects */
 .other_projects {
     margin-right: 2%;
     width: 400px;
@@ -154,10 +160,13 @@ margin-right: 2%;
     list-style-type: none;
 }
 
+
+/* styling for project description */
 .other_projects li {
     margin-bottom: 20%;
 }
 
+/* styling for documentation links */
 .other_projects a {
     color: black;
     text-decoration: none;
@@ -167,6 +176,31 @@ margin-right: 2%;
 .other_projects img {
     width: 40%;
     float: right;
+}
+
+/* about me background */
+#about_main p {
+    background-color: rebeccapurple;
+    color: floralwhite;
+    padding: .8%;
+    margin: 1% 0 2% 0;
+    width: 75%;
+}
+
+/* link to cv */
+#about_main a {
+    padding: .5% 2%;
+    border-radius: 10%;
+    background-color: turquoise;
+    color: black;
+    text-decoration: none;
+}
+
+/* styling image in about me */
+section img {
+    width: 10%;
+    float: right;
+    margin: -11.5% 4% 0 0;
 }
 
 /* copyright placement */
