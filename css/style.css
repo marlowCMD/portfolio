@@ -75,7 +75,7 @@ main section {
 }
 
 #home_main {
-    height: 624px;
+    height: 500px;
 }
 
 #home_main h1 {
@@ -238,7 +238,7 @@ figcaption a {
 
 /* project image size */
 .project_images img {
-    width: 500px;
+    width: 475px;
 }
 
 /* project thumbnail */
@@ -288,7 +288,7 @@ margin-right: 2%;
 }
 
 #about_main {
-    height: 624px;
+    height: 455px;
 }
 
 /* about me background */
