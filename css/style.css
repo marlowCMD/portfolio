@@ -102,7 +102,7 @@ h2 {
     justify-content: space-between;
     flex-direction: row;
     margin-top: 1%;
-    padding: 1% 0 .8% 2%;
+    padding: 1% 0 1.5% 2%;
     overflow-x: scroll;
     scrollbar-color: transparent transparent;
     scrollbar-color: #402BD0 white;
@@ -186,9 +186,10 @@ h2 {
 
 /* project titles placing */
 figcaption {
-    margin-top: 1%;
     text-align: center;
     font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1%;
 }
 
 /* styling the project discription */
