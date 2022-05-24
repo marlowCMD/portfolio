@@ -7,23 +7,24 @@
 /* universal styling */
 body {
     font-family: 'Quicksand', 'Roboto', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
 }
 
 /* link colors */
 nav li a {
-    color: white;
+    color: #333333;
     text-decoration: none;
+    margin: 0;
 }
 
 /* nav design */
 nav {
-    background-color: rebeccapurple;
+    background-color: #C2BCDD;
 }
 
-/* logo styling */
-nav ul li img {
-    width: 30px;
+nav ul li:first-of-type a {
+    width: 100%;
 }
 
 /* menu bar styling */
@@ -39,29 +40,59 @@ nav ul li {
     height: 2%;
     margin: .8% 0 .8% 10%;
     padding-left: 1.2%;
-    border-left: solid white 2px;
+    border-left: solid #42345E 2px;
 }
 
 /* links styling */
 nav ul li a {
     display: block;
-    width: 80px;
+    width: 100%;
 }
 
+nav ul li:first-of-type {
+    padding: 0 0 0 1%;
+} 
+
 /* nav link styling */
+
 nav ul li a:hover {
-    color: grey;
+    background-color: #42345E;
+    color: #E7E7E7;
+    border-radius: 3%;
+    padding: 0 8%;
 }
 
 /* logo */
 nav ul li:first-of-type {
     border: none;
-    margin-right: 40%;
+    margin-left: 0;
+    margin-right: 35%;
 }
 
 /* text paragraph styling */
 main section {
     margin: 1% 0 0 1%;
+}
+
+#home_main {
+    height: 624px;
+}
+
+#home_main h1 {
+    margin-bottom: .5%;
+}
+
+#home_main section:first-of-type {
+    width: 55%;
+}
+
+#home_main p:first-of-type {
+    margin: 0;
+}
+
+h2 {
+    margin-left: 1%;
+    margin-top: 2%;
 }
 
 /* projects carousel */
@@ -70,18 +101,23 @@ main section {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 3%;
-    padding-bottom: .8%;
-    padding-left: 2%;
+    margin-top: 1%;
+    padding: 1% 0 .8% 2%;
     overflow-x: scroll;
-    scrollbar-color: turquoise white;
+    scrollbar-color: transparent transparent;
+    scrollbar-color: #402BD0 white;
     scrollbar-width: thin;
-    background-color: rebeccapurple;
+    background-color: #C2BCDD;
 }
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
 /* carousel images */
-.gradient {
+.gradient1 {
     background-image:
-    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.64)),
+    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.8)),
     url("../images/project_thumb.png");
     background-size: cover;
     width: 500px;
@@ -90,16 +126,69 @@ main section {
     padding: 20px;
 }
 
+.gradient2 {
+    background-image:
+    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../images/project_thumb2.png");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    color: white;
+    padding: 20px;
+}
+
+.gradient3 {
+    background-image:
+    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../images/project_thumb3.png");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    color: white;
+    padding: 20px;
+}
+
+.gradient4 {
+    background-image:
+    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.8)),
+    url("../images/project_thumb4.png");
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    color: white;
+    padding: 20px;
+}
+
 /* hovering over the carousel items */
-.gradient:hover {
+.gradient1:hover {
     background-image:
     linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.4)),
     url("../images/project_thumb.png");
 }
 
+.gradient2:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.4)),
+    url("../images/project_thumb2.png");
+}
+
+.gradient3:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.4)),
+    url("../images/project_thumb3.png");
+}
+
+.gradient4:hover {
+    background-image:
+    linear-gradient(to bottom, rgba(250, 250, 250, 0.1), rgba(0, 0, 0, 0.4)),
+    url("../images/project_thumb4.png");
+}
+
 /* project titles placing */
 figcaption {
+    margin-top: 1%;
     text-align: center;
+    font-size: 1.5em;
 }
 
 /* styling the project discription */
@@ -109,31 +198,47 @@ figcaption {
 
 /* project images styling */
 .project_images {
+    width: 65%;
+    margin-left: 1%;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 2%;
-    margin-top: -25%;
+    background-color: #C2BCDD;
     padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.project_images:nth-of-type(1) {
+    margin-top: -24%;
+}
+
+.project_images:nth-of-type(2) {
+}
+
+/* spacing project image */
+.project_images li img {
+    margin: 2.4% 0;
 }
 
 /* project images caption styling */
 .project_images figcaption {
-text-align: start;
+    text-align: start;
+    font-size: 1.2em;
 }
 
 /* links in figcaption */
 figcaption a {
     padding: .5% 2%;
     border-radius: 5%;
-    background-color: turquoise;
-    color: black;
+    background-color: #402BD0;
+    color: #E7E7E7;
     text-decoration: none;
 }
 
 /* project image size */
 .project_images img {
-width: 500px;
+    width: 500px;
 }
 
 /* project thumbnail */
@@ -147,12 +252,15 @@ margin-right: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 2%;
 }
 
 /* text in other projects */
 .other_projects {
     margin-right: 2%;
     width: 400px;
+    padding: 1%;
+    background-color: #C2BCDD;
 }
 
 /* styling the other projects section */
@@ -168,20 +276,26 @@ margin-right: 2%;
 
 /* styling for documentation links */
 .other_projects a {
-    color: black;
+    color: #333333;
     text-decoration: none;
 }
 
 /* styling images of other project section */
 .other_projects img {
+    margin-top: 2%;
     width: 40%;
     float: right;
 }
 
+#about_main {
+    height: 624px;
+}
+
 /* about me background */
 #about_main p {
-    background-color: rebeccapurple;
-    color: floralwhite;
+    background-color: #C2BCDD;
+    font-weight: 500;
+    color: #333333;
     padding: .8%;
     margin: 1% 0 2% 0;
     width: 75%;
@@ -191,22 +305,31 @@ margin-right: 2%;
 #about_main a {
     padding: .5% 2%;
     border-radius: 10%;
-    background-color: turquoise;
-    color: black;
+    background-color: #402BD0;
+    color: #E7E7E7;
     text-decoration: none;
 }
 
 /* styling image in about me */
-section img {
+#about_main section img {
     width: 10%;
     float: right;
-    margin: -11.5% 4% 0 0;
+    margin: -12% 4% 0 0;
+}
+
+main section:last-of-type p {
+    margin-left: 1%;
 }
 
 /* copyright placement */
 footer {
+    width: 100%;
     clear: both;
-    position: absolute;
-    bottom: 0;
-    margin-left: 1%;
+    background-color: #C2BCDD;
+    margin-top: 5%;
+    padding: 1%;
+}
+
+footer section {
+    margin-bottom: .2%;
 }
