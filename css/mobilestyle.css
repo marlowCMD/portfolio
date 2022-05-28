@@ -73,6 +73,7 @@ nav ul li:first-of-type {
 
 main {
     min-height: 100%;
+    width: 100%;
 }
 
 /* text paragraph styling */
@@ -179,7 +180,7 @@ figcaption {
 
 /* copyright placement */
 footer {
-    width: 100%;
+    width: 98%;
     overflow-x: hidden;
     font-size: .7em;
     clear: both;
