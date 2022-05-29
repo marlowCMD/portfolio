@@ -122,6 +122,12 @@ h2 {
     display: none;
 }
 
+/* project thumbnail */
+.carousel li {
+    margin-left: 0;
+    margin-right: 2%;
+    }
+
 /* carousel images */
 .gradient1 {
     background-image:
@@ -252,12 +258,6 @@ figcaption a {
     width: 475px;
 }
 
-/* project thumbnail */
-.carousel li {
-margin-left: 0;
-margin-right: 2%;
-}
-
 /* styling the project description and navigation on the right */
 .project_top {
     display: flex;
@@ -298,6 +298,10 @@ margin-right: 2%;
     float: right;
 }
 
+.leerpunten {
+    margin-bottom: 3%;
+}
+
 /* about me background */
 #about_main p {
     background-color: #C2BCDD;
@@ -327,11 +331,6 @@ margin-right: 2%;
 main section:last-of-type p {
     margin-left: 1%;
 }
-
-.leerpunten {
-    margin-bottom: 3%;
-}
-
 
 /* copyright placement */
 footer {
