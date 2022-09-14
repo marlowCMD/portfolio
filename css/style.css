@@ -497,9 +497,9 @@ footer section {
         width: 70%;
     }
     
-    #home_main p:first-of-type {
+    /* #home_main p:first-of-type {
         margin: 0;
-    }
+    } */
 
     #home_main h2 {
         display: none;
