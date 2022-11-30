@@ -116,10 +116,6 @@ h2 {
     flex-direction: column;
     margin: 1% 0 10% 0;
     padding: 1% .5% 1.5% .5%;
-    overflow-x: scroll;
-    scrollbar-color: transparent transparent;
-    scrollbar-color: #402BD0 white;
-    scrollbar-width: thin;
     background-color: #C2BCDD;
 }
 
@@ -513,20 +509,15 @@ footer section {
     /* projects carousel */
     .carousel {
         list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto auto;
         margin: 1% 0 5% 0;
         padding: 0 0 1.5% 2%;
-        overflow-x: scroll;
-        scrollbar-color: transparent transparent;
-        scrollbar-color: #402BD0 white;
-        scrollbar-width: thin;
         background-color: #C2BCDD;
     }
 
     .carousel li {
-        margin-right: 2%;
+        padding: 0 30px;
     }
     
     .carousel::-webkit-scrollbar {
