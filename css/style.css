@@ -285,16 +285,20 @@ figcaption a {
     margin-bottom: 5% !important;
 }
 
+#about_main {
+    display: flex;
+}
+
 #about_main h1 {
     font-size: 1.2em;
     margin-bottom: 1%;
 }
 
 #about_main section {
-    width: 95%;
+    width: 65%;
     font-weight: 500;
     color: #333333;
-    margin: 3% auto;
+    margin: 3% 2%;
 }
 
 /* about me background */
@@ -319,10 +323,10 @@ figcaption a {
 }
 
 /* styling image in about me */
-#about_main section img {
-    width: 30%;
-    margin: 2% 2% 1% 3%;
-    float: right;
+#about_main img {
+    width: 20%;
+    height: 20%;
+    margin: 8.5% 2% 1% 3%;
 }
 
 /* copyright placement */
@@ -424,10 +428,10 @@ footer section {
         margin: 2.4% 0;
     }
 
-    #about_main section img {
+    #about_main img {
         width: 20%;
-        margin: 2% 2% 1% 3%;
-        float: right;
+        height: 20%;
+        margin: 6% 2% 1% 3%;
     }
 
 }
@@ -511,7 +515,7 @@ footer section {
         list-style-type: none;
         display: grid;
         grid-template-columns: auto auto;
-        margin: 1% 0 5% 0;
+        margin: 1% 1% 5% 1%;
         padding: 0 0 1.5% 2%;
         background-color: #C2BCDD;
     }
@@ -604,14 +608,14 @@ footer section {
     }
 
     #about_main section {
-        width: 98%;
+        width: 65%;
         margin: 1%;
     }
 
-    #about_main section img {
-        width: 15%;
-        margin: 2% 2% 1% 3%;
-        float: right;
+    #about_main img {
+        width: 20%;
+        height: 20%;
+        margin: 4% 2% 1% 3%;
     }
 
     /* copyright placement */
@@ -740,13 +744,13 @@ footer section {
     }
 
     #about_main section p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
-    #about_main section img {
-        width: 10%;
-        margin: 2% 2% 1% 3%;
-        float: right;
+    #about_main img {
+        width: 20%;
+        height: 20%;
+        margin: 3.5% 2% 1% 3%;
     }
 
 }
