@@ -20,14 +20,15 @@ nav {
 
 /* link colors */
 nav li a {
-    color: #333333;
+    /* color: #333333; */
+    color: #FFFFFF;
     text-decoration: none;
     margin: 0;
 }
 
 /* nav design */
 nav {
-    background-color: #C2BCDD;
+    background-color: #000000;
 }
 
 nav ul li:first-of-type a {
@@ -40,7 +41,7 @@ nav ul {
     list-style-type: none;
     justify-content: space-around;
     display: flex;
-    border-bottom: solid #42345E 3px;
+    border-bottom: solid #C2BCDD 3px;
 }
 
 /* menu items styling */
@@ -116,7 +117,7 @@ h2 {
     flex-direction: column;
     margin: 1% 0 10% 0;
     padding: 1% .5% 1.5% .5%;
-    background-color: #C2BCDD;
+    background-color: #000000;
 }
 
 /* project thumbnail */
@@ -168,10 +169,11 @@ h2 {
 
 /* project titles placing */
 figcaption {
+    color: #FFFFFF;
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
 }
 
 .project_main {
@@ -203,7 +205,7 @@ figcaption {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    background-color: #C2BCDD;
+    background-color: #000000;
     padding-left: 1%;
     padding-bottom: 1%;
 }
@@ -215,7 +217,7 @@ figcaption {
 
 /* spacing project image */
 .project_images li img {
-    margin: auto;
+    margin: 0 auto 2% auto;
 }
 
 /* project images caption styling */
@@ -231,10 +233,12 @@ figcaption {
 
 /* links in figcaption */
 figcaption a {
+    margin-top: 1%;
     padding: .5% 2%;
     border-radius: 5%;
-    background-color: #402BD0;
-    color: #E7E7E7;
+    background-color: #C2BCDD;
+    font-size: 1.5em;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -297,13 +301,14 @@ figcaption a {
 #about_main section {
     width: 65%;
     font-weight: 500;
-    color: #333333;
+    color: #000000;
     margin: 3% 2%;
 }
 
 /* about me background */
 #about_main p {
-    background-color: #C2BCDD;
+    background-color: #000000;
+    color: #FFFFFF;
     padding: 1%;
     font-size: .8em;
 }
@@ -316,8 +321,8 @@ figcaption a {
 #about_main section a {
     padding: .5% 2%;
     border-radius: 10%;
-    background-color: #402BD0;
-    color: #E7E7E7;
+    background-color: #C2BCDD;
+    color: #FFFFFF;
     font-size: 1.5em;
     text-decoration: none;
 }
@@ -337,6 +342,7 @@ footer {
     clear: both;
     margin-top: auto;
     background-color: #C2BCDD;
+    border-top: solid #000000 3px;
     padding: 1%;
 }
 
@@ -366,7 +372,7 @@ footer section {
 
 
 @media (min-width:500px) {
-    
+
     /* carousel images */
     .gradient1 {
         background-image:
@@ -374,7 +380,7 @@ footer section {
         url("../images/project_thumb.png");
         background-size: cover;
         background-position: 50% 10%;
-        height: 100px;
+        height: 200px;
         color: white;
         padding: 20px;
     }
@@ -385,7 +391,7 @@ footer section {
         url("../images/project_thumb2.png");
         background-size: cover;
         background-position: 50% 15%;
-        height: 100px;
+        height: 200px;
         color: white;
         padding: 20px;
     }
@@ -396,7 +402,7 @@ footer section {
         url("../images/project_thumb3.png");
         background-size: cover;
         background-position: 50% 5%;
-        height: 100px;
+        height: 200px;
         color: white;
         padding: 20px;
     }
@@ -407,9 +413,13 @@ footer section {
         url("../images/project_thumb4.png");
         background-size: cover;
         background-position: 50% 50%;
-        height: 100px;
+        height: 200px;
         color: white;
         padding: 20px;
+    }
+
+    figcaption {
+        margin: 3% 0 5% 0;
     }
 
     .project_images {
@@ -418,9 +428,13 @@ footer section {
         display: flex;
         flex-direction: row;
         gap: 2%;
-        background-color: #C2BCDD;
+        background-color: #000000;
         padding-left: 1%;
         padding-bottom: 1%;
+    }
+
+    .project_images a {
+        font-size: 1em;
     }
 
     .project_images li {
@@ -459,8 +473,8 @@ footer section {
     /* nav link styling */
     
     nav ul li a:hover {
-        background-color: #42345E;
-        color: #E7E7E7;
+        background-color: #FFFFFF;
+        color: #42345E;
         border-radius: 3%;
         padding: 0 8%;
     }
@@ -496,10 +510,6 @@ footer section {
     #home_main section:first-of-type {
         width: 70%;
     }
-    
-    /* #home_main p:first-of-type {
-        margin: 0;
-    } */
 
     #home_main h2 {
         display: none;
@@ -516,8 +526,12 @@ footer section {
         display: grid;
         grid-template-columns: auto auto;
         margin: 1% 1% 5% 1%;
-        padding: 0 0 1.5% 2%;
-        background-color: #C2BCDD;
+        padding: 0 0 1.5% 0;
+        background-color: #000000;
+    }
+
+    .carousel div {
+        width: 340px;
     }
 
     .carousel li {
@@ -535,7 +549,7 @@ footer section {
         url("../images/project_thumb.png");
         background-size: cover;
         width: 500px;
-        height: 300px;
+        height: 200px;
         color: white;
         padding: 20px;
     }
@@ -546,7 +560,7 @@ footer section {
         url("../images/project_thumb2.png");
         background-size: cover;
         width: 500px;
-        height: 300px;
+        height: 200px;
         color: white;
         padding: 20px;
     }
@@ -558,7 +572,7 @@ footer section {
         background-size: cover;
         background-position: 47% 49%;
         width: 500px;
-        height: 300px;
+        height: 200px;
         color: white;
         padding: 20px;
     }
@@ -569,7 +583,7 @@ footer section {
         url("../images/project_thumb4.png");
         background-size: cover;
         width: 500px;
-        height: 300px;
+        height: 200px;
         color: white;
         padding: 20px;
     }
@@ -604,7 +618,7 @@ footer section {
         text-align: center;
         font-size: 1.5em;
         font-weight: bold;
-        margin-bottom: 1%;
+        margin: 3% 0 5% 0;
     }
 
     #about_main section {
@@ -626,6 +640,7 @@ footer section {
         clear: both;
         margin-top: auto;
         background-color: #C2BCDD;
+        border-top: solid #000000 3px;
         padding: 1%;
     }
 
@@ -658,6 +673,11 @@ footer section {
         font-size: 1em;
     }
 
+    .carousel div {
+        width: 410px;
+        height: 200px;
+    }
+
     /* styling the project discription */
     .project_main section:first-of-type {
         width: 97%;
@@ -682,7 +702,7 @@ footer section {
         display: flex;
         flex-direction: row;
         gap: 2%;
-        background-color: #C2BCDD;
+        background-color: #000000;
         padding-left: 1%;
         padding-bottom: 1%;
     }
@@ -711,8 +731,8 @@ footer section {
     figcaption a {
         padding: .5% 2%;
         border-radius: 5%;
-        background-color: #402BD0;
-        color: #E7E7E7;
+        background-color: #C2BCDD;
+        color: #FFFFFF;
         text-decoration: none;
     }
 
@@ -761,6 +781,11 @@ footer section {
         font-size: 1em;
     }
 
+    .carousel div {
+        width: 540px;
+        height: 300px;
+    }
+
     #about_main p {
         padding: .4%;
     }
@@ -779,14 +804,14 @@ footer section {
     
     /* link colors */
     nav li a {
-        color: #333333;
+        color: #FFFFFF;
         text-decoration: none;
         margin: 0;
     }
     
     /* nav design */
     nav {
-        background-color: #C2BCDD;
+        background-color: #000000;
         padding-bottom: .5%;
     }
     
@@ -808,11 +833,16 @@ footer section {
         height: 70%;
         margin: .8% 0 1% 10%;
         padding-left: 0.6%;
-        border-left: solid #42345E 2px;
+        border-left: solid #C2BCDD 2px;
     }
 
     #home_main section:first-of-type {
         width: 65%;
+    }
+
+    .carousel div {
+        width: 640px;
+        height: 400px;
     }
 
     /* project images styling */
@@ -824,7 +854,7 @@ footer section {
         display: flex;
         flex-direction: row;
         gap: 2%;
-        background-color: #C2BCDD;
+        background-color: #000000;
         padding-left: 1%;
         padding-bottom: 1%;
     }
@@ -837,7 +867,8 @@ footer section {
         margin-top: 2%;
         width: 400px;
         padding: 1%;
-        background-color: #C2BCDD;
+        color: #FFFFFF;
+        background-color: #000000;
     }
 
     .other_projects h2 {
@@ -858,7 +889,7 @@ footer section {
 
     /* styling for documentation links */
     .other_projects a {
-        color: #333333;
+        color: #FFFFFF;
         text-decoration: none;
     }
 
@@ -876,11 +907,16 @@ footer section {
 
     nav {
         font-size: 1em;
-        height: 60px;
+        height: 45px;
     }
 
     main {
         font-size: 1.8em;
+    }
+
+    .carousel div {
+        width: 750px;
+        height: 450px;
     }
 
     footer {
@@ -900,6 +936,11 @@ footer section {
         font-size: 1.8em;
     }
 
+    .carousel div {
+        width: 900px;
+        height: 500px;
+    }
+
     footer {
         font-size: 1.8em;
     }
@@ -915,6 +956,11 @@ footer section {
 
     main {
         font-size: 2em;
+    }
+
+    .carousel div {
+        width: 1200px;
+        height: 500px;
     }
 
     footer {
