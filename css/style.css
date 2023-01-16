@@ -422,12 +422,18 @@ footer section {
         margin: 3% 0 5% 0;
     }
 
+    .project_main section:first-of-type {
+        width: 85%;
+        margin: 2% 7%;;
+    }
+
     .project_images {
-        margin-left: 1%;
+        width: 85%;
+        margin-left: auto;
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        gap: 2%;
+        gap: 10%;
         background-color: #000000;
         padding-left: 1%;
         padding-bottom: 1%;
@@ -438,7 +444,7 @@ footer section {
     }
 
     .project_images li {
-        width: 47%;
+        width: 44%;
         margin: 2.4% 0;
     }
 
@@ -500,7 +506,7 @@ footer section {
     }
     
     #home_main section:first-of-type {
-        margin: 0;
+        margin: 2% 4%;
     }
     
     #home_main h1 {
@@ -522,16 +528,17 @@ footer section {
     
     /* projects carousel */
     .carousel {
+        width: 90%;
         list-style-type: none;
         display: grid;
         grid-template-columns: auto auto;
-        margin: 1% 1% 5% 1%;
+        margin: 1% 1% 5% 5%;
         padding: 0 0 1.5% 0;
         background-color: #000000;
     }
 
     .carousel div {
-        width: 340px;
+        width: 280px;
     }
 
     .carousel li {
@@ -663,6 +670,7 @@ footer section {
 
     #home_main section:first-of-type {
         width: 80%;
+        margin: 2% 4%;
     }
 
     #home_main h1 {
@@ -674,14 +682,14 @@ footer section {
     }
 
     .carousel div {
-        width: 410px;
+        width: 350px;
         height: 200px;
     }
 
     /* styling the project discription */
     .project_main section:first-of-type {
-        width: 97%;
-        margin: 1% 2% 2% 1%;
+        width: 85%;
+        margin: 2% 7%;
     }
 
     
@@ -696,12 +704,12 @@ footer section {
 
     /* project images styling */
     .project_images {
-        width: 95%;
-        margin-left: 1%;
+        width: 85%;
+        margin: auto;
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        gap: 2%;
+        gap: 7%;
         background-color: #000000;
         padding-left: 1%;
         padding-bottom: 1%;
@@ -747,8 +755,8 @@ footer section {
     }
     
     .leerpunten {
-        width: 98% !important; 
-        margin: 1% 0 3% .5% !important;
+        width: 85% !important; 
+        margin: 1% 6.5% !important;
     }
 
     .leerpunten h2 {
@@ -777,12 +785,17 @@ footer section {
 
 @media (min-width: 1320px) {
 
+    #home_main section:first-of-type {
+        width: 80%;
+        margin: 2% 4%;
+    }
+
     #home_main p:first-of-type {
         font-size: 1em;
     }
 
     .carousel div {
-        width: 540px;
+        width: 480px;
         height: 300px;
     }
 
@@ -838,22 +851,29 @@ footer section {
 
     #home_main section:first-of-type {
         width: 65%;
+        margin: 2% 4%;
     }
 
     .carousel div {
-        width: 640px;
+        width: 580px;
         height: 400px;
     }
 
+    .project_main section:first-of-type {
+        width: 85%;
+        margin: 2% 6.5%;
+    }
+
+
     /* project images styling */
     .project_images {
-        width: 65%;
-        margin-left: 1%;
+        width: 50%;
+        margin: auto;
         margin-top: 1%;
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        gap: 2%;
+        gap: 4%;
         background-color: #000000;
         padding-left: 1%;
         padding-bottom: 1%;
@@ -863,8 +883,7 @@ footer section {
     .other_projects {
         display: block;
         float: right;
-        margin-right: 2%;
-        margin-top: 2%;
+        margin-right: 8%;
         width: 400px;
         padding: 1%;
         color: #FFFFFF;
@@ -915,8 +934,18 @@ footer section {
     }
 
     .carousel div {
-        width: 750px;
+        width: 670px;
         height: 450px;
+    }
+
+
+    .project_images {
+        width: 55%;
+        margin: auto;
+    }
+
+    .other_projects {
+        font-size: .8em;
     }
 
     footer {
@@ -937,8 +966,18 @@ footer section {
     }
 
     .carousel div {
-        width: 900px;
+        width: 830px;
         height: 500px;
+    }
+
+    
+    .project_images {
+        width: 60%;
+        margin: auto;
+    }
+
+    .other_projects {
+        font-size: 1em;
     }
 
     footer {
@@ -959,8 +998,17 @@ footer section {
     }
 
     .carousel div {
-        width: 1200px;
+        width: 1140px;
         height: 500px;
+    }
+
+    .project_images {
+        width: 65%;
+        margin: auto;
+    }
+
+    .other_projects {
+        font-size: 1.1em;
     }
 
     footer {
@@ -968,3 +1016,4 @@ footer section {
     }
 
 }
+
