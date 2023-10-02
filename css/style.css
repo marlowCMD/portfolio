@@ -105,8 +105,7 @@ h2 {
 
 #home_main h2 {
     font-size: 1.2em;
-    margin: 5% auto 1% auto;
-    text-align: center;
+    margin-left: 2%;
 }
 
 /* projects carousel */
@@ -512,18 +511,14 @@ footer section {
     #home_main h1 {
         margin-bottom: .5%;
     }
+
+    #home_main h2 {
+        font-size: 1.5em;
+        margin-left: 5%;
+    }
     
     #home_main section:first-of-type {
         width: 70%;
-    }
-
-    #home_main h2 {
-        display: none;
-    }
-    
-    h2 {
-        margin-left: 1%;
-        margin-top: 2%;
     }
     
     /* projects carousel */
@@ -855,7 +850,7 @@ footer section {
     }
 
     #home_main section:first-of-type {
-        width: 65%;
+        width: 90%;
         margin: 2% 4%;
     }
 
